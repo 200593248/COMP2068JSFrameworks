@@ -1,0 +1,38 @@
+<h1 class="text-center mb-5">My Project</h1>
+
+<div class="row">
+    {{#each projects}}
+    <div class="col-lg-6 mb-4">
+        <div class="card h-100 project-card">
+            <div class="card-body">
+                <h3 class="card-title">{{this.title}}</h3>
+                <p class="card-text">{{this.description}}</p>
+                
+                <div class="mb-3">
+                    <strong>Technologies:</strong>
+                    <div class="mt-2">
+                        {{#each this.technologies}}
+                        <span class="badge bg-primary me-1">{{this}}</span>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="btn-group" role="group">
+                    <a href="{{this.githubUrl}}" class="btn btn-outline-dark" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="{{this.liveUrl}}" class="btn btn-outline-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<div class="text-center mt-5">
+    <p>Interested in seeing more of my work?</p>
+    <a href="/contact" class="btn btn-primary">Get In Touch</a>
+</div>
