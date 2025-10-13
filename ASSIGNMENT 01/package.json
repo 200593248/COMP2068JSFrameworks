@@ -1,16 +1,17 @@
 {
-  "name": "assignment-01",
-  "version": "0.0.0",
-  "private": true,
+  "name": "jacob-sleeba-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website for Jacob Sleeba",
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "hbs": "~4.0.4",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
-  }
+    "express": "^4.18.2",
+    "hbs": "^4.2.0"
+  },
+  "keywords": ["portfolio", "express", "nodejs"],
+  "author": "Jacob Sleeba",
+  "license": "MIT"
 }
